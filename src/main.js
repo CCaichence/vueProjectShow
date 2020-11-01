@@ -4,6 +4,10 @@ import router from './router'
 import store from './store'
 Vue.config.productionTip = false
 
+//使用一个空的vue实例作为一个事件中心（事件总线）
+Vue.prototype.$bus = new Vue()
+
+
 new Vue({
   router,
   store,

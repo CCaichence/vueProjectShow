@@ -2,10 +2,10 @@
     <TabBar>
         <TabBarItem path="/home" activeColor="red">
             <template v-slot:item-icon>
-                <img src="../assets/img/tabbar/home.png" alt="">
+                <img src="../../../assets/img/tabbar/home.png" alt="">
             </template>
             <template v-slot:item-icon-active>
-                <img src="../assets/img/tabbar/home_active.png" alt="">
+                <img src="../../../assets/img/tabbar/home_active.png" alt="">
             </template>
             <template v-slot:item-text>
                 <div>首页</div>
@@ -13,10 +13,10 @@
         </TabBarItem>
         <TabBarItem path="/category" activeColor="red">
             <template v-slot:item-icon>
-                <img src="../assets/img/tabbar/classification.png" alt="">
+                <img src="~assets/img/tabbar/classification.png" alt="">
             </template>
             <template v-slot:item-icon-active>
-                <img src="../assets/img/tabbar/classification_active.png" alt="">
+                <img src="~assets/img/tabbar/classification_active.png" alt="">
             </template>
             <template v-slot:item-text>
                 <div>分类</div>
@@ -24,10 +24,10 @@
         </TabBarItem>
         <TabBarItem path="/cart" activeColor="red">
             <template v-slot:item-icon>
-                <img src="../assets/img/tabbar/cart.png" alt="">
+                <img src="~assets/img/tabbar/cart.png" alt="">
             </template>
             <template v-slot:item-icon-active>
-                <img src="../assets/img/tabbar/cart_active.png" alt="">
+                <img src="~assets/img/tabbar/cart_active.png" alt="">
             </template>
             <template v-slot:item-text>
                 <div>购物车</div>
@@ -35,10 +35,10 @@
         </TabBarItem>
         <TabBarItem path="/profile" activeColor="red">
             <template v-slot:item-icon>
-                <img src="../assets/img/tabbar/profile.png" alt="">
+                <img src="~assets/img/tabbar/profile.png" alt="">
             </template>
             <template v-slot:item-icon-active>
-                <img src="../assets/img/tabbar/profile_active.png" alt="">
+                <img src="~assets/img/tabbar/profile_active.png" alt="">
             </template>
             <template v-slot:item-text>
                 <div>我的</div>
@@ -49,8 +49,8 @@
 </template>
 
 <script>
-    import TabBar from "./TabBar";
-    import TabBarItem from "./TabBarItem";
+    import TabBar from "common/tabbar/TabBar";
+    import TabBarItem from "common/tabbar/TabBarItem";
     export default {
         name: "MainTabBar",
         components: {
