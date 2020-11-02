@@ -36,6 +36,8 @@
           this.$bus.$emit('itemImageLoad')
         }else if(this.$route.path === '/detail'){
           this.$bus.$emit('detailItemImgLoad')
+        }else if(this.$route.path === '/category'){
+          this.$bus.$emit('categoryItemImgLoad')
         }
         //2、方法2（在home中，离开时取消此事件监听）
         // this.$bus.$emit('itemImageLoad')

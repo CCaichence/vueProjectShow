@@ -39,7 +39,6 @@
   import {getDetail,getRecommend, Goods, Shop, GoodsParam} from "network/detail";
   import {debounce} from "../../common/utils";
   import {backTopMixin} from "../../common/mixin";
-
   export default {
     name: "Detail",
     components:{
@@ -53,7 +52,7 @@
       DetailRecommendInfo,
       DetailBottomBar,
       BackTop,
-      Scroll
+      Scroll,
     },
     mixins:[backTopMixin],
     data() {
@@ -67,7 +66,7 @@
         commentInfo:{},
         recommendList:[],
         themeTops:[],
-        currentIndex: 0
+        currentIndex: 0,
       }
     },
     created() {
@@ -90,15 +89,17 @@
     methods:{
       addToCart(){
         // 1.创建对象
-        const obj = {}
+        const product = {}
         // 2.对象信息
-        obj.iid = this.iid;
-        obj.imgURL = this.topImages[0]
-        obj.title = this.goods.title
-        obj.desc = this.goods.desc;
-        obj.newPrice = this.goods.nowPrice;
+        product.iid = this.iid;
+        product.imgURL = this.topImages[0]
+        product.title = this.goods.title
+        product.desc = this.goods.desc;
+        product.newPrice = this.goods.nowPrice;
         // 3.添加到Store中
-        this.$store.commit('addCart', obj)
+        this.$store.dispatch('addCart', product).then(res => {
+          this.$toast.show(res)
+        })
       },
       getOffsetTops(){
         this.themeTops = []
