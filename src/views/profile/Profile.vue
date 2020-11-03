@@ -1,6 +1,6 @@
 <template>
   <div id="profile">
-    <nav-bar class="nav-bar"><div slot="center">小码哥商城</div></nav-bar>
+    <nav-bar class="nav-bar"><div slot="center">coderCC商城</div></nav-bar>
     <!--1.单独封装一个组件: 利用slot知识点-->
     <UserInfo></UserInfo>
 
@@ -8,7 +8,7 @@
     <section class="account">
       <div class="account-item">
         <div class="number">
-          <span class="balance">0.00</span>元
+          <span class="balance">1000000</span>元
         </div>
         <div class="account-info">我的余额</div>
       </div>
@@ -20,7 +20,7 @@
       </div>
       <div class="account-item">
         <div class="number">
-          <span class="balance">0</span>分
+          <span class="balance">10000</span>分
         </div>
         <div class="account-info">我的积分</div>
       </div>

@@ -183,7 +183,7 @@
   }
   .tab-control2{
     position: fixed;
-    width: 220px;
+    width: 75%;
     z-index: 10;
     right: 0;
   }

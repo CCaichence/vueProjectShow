@@ -1,6 +1,6 @@
 <template>
   <div class="goods" @click="goToDetail">
-    <img :src="getImg" @load="imageLoad">
+    <img class="image" :src="getImg" @load="imageLoad">
     <div class="goods-info">
       <p>{{goodsItem.title}}</p>
       <span class="price">¥{{goodsItem.price}}</span>
@@ -59,6 +59,7 @@
   }
   .goods img {
     width: 100%;
+    height: 100%;
     border-radius: 5px;
   }
 

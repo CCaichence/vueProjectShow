@@ -2,7 +2,7 @@ import {request} from "./request";
 
 export async function getDetail(iid){
   return await request({
-    url:'/detail',
+    url:'/api/w6/detail',
     params:{
       iid
     }
@@ -11,7 +11,7 @@ export async function getDetail(iid){
 
 export async function getRecommend(){
   return await request({
-    url:'/recommend'
+    url:'/api/w6/recommend'
   })
 }
 
